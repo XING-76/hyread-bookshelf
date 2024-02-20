@@ -1,0 +1,28 @@
+@import '@assets/css/variables';
+
+.bookCard__field {
+    padding: 0.5rem;
+
+    .bookCard__image {
+        position: relative;
+        max-width: 8rem;
+
+        img {
+            max-width: 8rem;
+            height: 12rem;
+            border-radius: map-get($borderRadius, 'light-small');
+        }
+
+        .bookCard__likeBtn {
+            cursor: pointer;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+    }
+
+    .bookCard__bookName {
+        max-width: 8rem;
+        @include font-size(map-get($fontSize, 'min-small'));
+    }
+}

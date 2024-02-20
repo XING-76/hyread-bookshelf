@@ -1,0 +1,15 @@
+.header__field {
+    font-weight: bold;
+    padding: 1.5rem;
+    border-bottom: 2px solid lightgray;
+
+    .middle {
+        justify-content: center;
+    }
+
+    .header__btn {
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+    }
+}
