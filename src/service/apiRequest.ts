@@ -9,7 +9,7 @@ export default class ApiRequest {
      */
     static getAll() {
         return httpRequest({
-            url: `api/${SERVICE_URL_CONFIG.exam}/${SERVICE_URL_CONFIG.userList}`,
+            url: `/api/${SERVICE_URL_CONFIG.exam}/${SERVICE_URL_CONFIG.userList}`,
             method: HTTP_METHOD.GET
         });
     }
