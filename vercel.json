@@ -1,0 +1,6 @@
+{
+    "rewrites": [
+        { "source": "/api/:path(.*)", "destination": "https://mservice.ebook.hyread.com.tw" },
+        { "source": "/(.*)", "destination": "/index.html" }
+    ]
+}
