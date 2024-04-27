@@ -8,7 +8,9 @@ interface HttpRequestConfig extends AxiosRequestConfig {
     data?: any;
 }
 
-// 封裝 http 請求
+/**
+ * 封裝 http 請求
+ */
 export const httpRequest = async (
     { url = '', method = HTTP_METHOD.GET, headers = { 'content-type': 'application/json' }, data = null || '' },
     timeoutMillisecond = Number(DEFAULT_TIMEOUT),
@@ -26,7 +28,7 @@ export const httpRequest = async (
             url,
             method,
             signal,
-            body: data || null,
+            data: data || null,
             headers: {
                 ...headers,
                 ...options

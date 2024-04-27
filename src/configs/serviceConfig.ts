@@ -1,5 +1,3 @@
-export const API_PREFIX = import.meta.env.VITE_API_PREFIX;
-
 export const DEFAULT_TIMEOUT = import.meta.env.VITE_DEFAULT_TIMEOUT;
 
 export const HTTP_METHOD = {

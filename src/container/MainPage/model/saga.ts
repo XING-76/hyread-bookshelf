@@ -8,9 +8,7 @@ function* fetchGetData() {
     try {
         yield put(SET_LOADING_STATE(true));
 
-        // const response: Promise<any> = yield call(ApiRequest.getAll);
-        // 因無法訪問，暫用模擬資料
-        const response: Promise<any> = yield call(ApiRequest.getFake);
+        const response: Promise<any> = yield call(ApiRequest.getAll);
 
         const convertedResponse = convertResponseOfGetAllAPI(response);
 

@@ -1,4 +1,4 @@
-import { API_PREFIX, HTTP_METHOD, SERVICE_URL_CONFIG } from '@configs/serviceConfig';
+import { HTTP_METHOD, SERVICE_URL_CONFIG } from '@configs/serviceConfig';
 import { httpRequest } from './httpRequest';
 
 export default class ApiRequest {
@@ -9,7 +9,7 @@ export default class ApiRequest {
      */
     static getAll() {
         return httpRequest({
-            url: `${API_PREFIX}/${SERVICE_URL_CONFIG.exam}/${SERVICE_URL_CONFIG.userList}`,
+            url: `api/${SERVICE_URL_CONFIG.exam}/${SERVICE_URL_CONFIG.userList}`,
             method: HTTP_METHOD.GET
         });
     }
